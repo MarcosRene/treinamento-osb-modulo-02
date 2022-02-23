@@ -1,46 +1,45 @@
-# Getting Started with Create React App
+## Descrição
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+No contexto, o cliente trabalha em uma biblioteca municipal e deseja informatizar o processo de busca, empréstimo e devolução de livros.
 
-## Available Scripts
+Para esta atividade, deverá ser desenvolvida uma aplicação web front-end utilizando a API create-react-app. A aplicação deve processar e requisitar uma lista de livros junto a um Web Service disposto na web, tratar os dados recebidos e exibi-los para o usuário.
 
-In the project directory, you can run:
+A ideia é que a Interface de Usuário (UI) da aplicação disponha de um campo de texto “chave de busca” e um botão “pesquisar”. Assim, quando o usuário clicar em “pesquisar” será exibido uma requisição GET com a URI [https://hn.algolia.com/api/v1/search?query=X](https://hn.algolia.com/api/v1/search?query=X), em que X é o valor de “chave de busca”.
 
-### `npm start`
+As informações necessárias para a realização da atividade estão disponíveis na apostila do Módulo 1.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Seguem em anexo exemplos de como pode ser desenvolvida a Interface do Usuário da aplicação e como montar a requisição no software web cliente utilizando Postman e a apostila com as definições, respectivamente:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<p align="center">
+  <img src="./.github/home.png" alt="tela com fundo branco; input com botão de pesquisa;"/>
+</p>
 
-### `npm test`
+## Tecnologias
+  
+- [ReactJS](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Para rodar o projeto
 
-### `npm run build`
+Clone o repositório abaixo. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+$ git clone https://github.com/MarcosRene/treinamento-osb-modulo-02 && cd treinamento-osb-modulo-02
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*** Siga os seguintes passos ***
 
-### `npm run eject`
+Crie um arquivo .env na raiz do projeto, copie a informação do arquivo .env.example e cole no arquivo .env criado:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+# Instale as dependências
+$ npm
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Execute o servidor web
+$ npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+O aplicativo estará disponível para acesso em seu navegador em `http://localhost:3000`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
